@@ -26,6 +26,10 @@ public class DialogContent extends ParentPage {
     @FindBy(xpath = "(//*[text()='Internship'])[1]")
     public WebElement headText;
 
+    //2
+    @FindBy(xpath = "//mat-toolbar/div/div/div/div/img")
+    public WebElement logo;
+
     // 5
 
     @FindBy(xpath = "(//*[@class='mat-badge mat-badge-accent mat-badge-above mat-badge-after mat-badge-small'])[2]")
