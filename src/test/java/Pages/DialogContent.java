@@ -41,17 +41,17 @@ public class DialogContent extends ParentPage {
     @FindBy(xpath = "//span[text()='Trash']")
     public WebElement trash;
 
-    @FindBy(xpath = "//ms-delete-button/button/fa-icon")
+    @FindBy(xpath = "//ms-delete-button/button/span[2]")
     public WebElement trashDelete;
 
-    @FindBy(css = "button[type='submit']")
+    @FindBy(css = "button[type='submit'] :nth-child(2)")
     public WebElement deleteButton;
 
     //Message successfully deleted
-    @FindBy(xpath = "//mat-panel-description/div")
+    @FindBy(xpath = "//mat-panel-description/div[text()='Message successfully deleted']")
     public WebElement deleteMessage;
 
-    @FindBy(xpath = "//tbody//ms-standard-button/button/span[2]")
+    @FindBy(xpath = "//tbody//ms-standard-button[@icon='trash-restore']/button/span[2]")
     public WebElement restore;
 
     //Message successfully restored from trash
