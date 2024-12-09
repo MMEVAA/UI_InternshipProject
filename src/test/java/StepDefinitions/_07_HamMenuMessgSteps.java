@@ -30,6 +30,7 @@ public class _07_HamMenuMessgSteps {
 
     @And("Click the restore button on the trash page")
     public void clickTheRestoreButtonOnTheTrashPage() {
+        dc.wait.until(ExpectedConditions.invisibilityOf(dc.deleteMessage));
         dc.myClick(dc.restore);
     }
 
