@@ -59,6 +59,21 @@ public class DialogContent extends ParentPage {
     public WebElement restoreMessage;
 
 
+    //10
+    @FindBy(xpath = "(//ms-standard-button/button/span[2])[1]")
+    public WebElement userView;
+
+    @FindBy(xpath = "//div[@class='mat-mdc-tab-labels']/div/span[2]/span")
+    public WebElement onlinePayment;
+
+    @FindBy(xpath = "//div[@class='mat-mdc-tab-labels']/div[2]/span[2]/span")
+    public WebElement feeBalanceDetail;
+
+    @FindBy(xpath = "//input[@value='STRIPE']")
+    public WebElement stripe;
+
+
+
     // 5
 
     @FindBy(xpath = "//*[@class='mat-mdc-tooltip-trigger mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base']")
