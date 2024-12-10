@@ -61,11 +61,55 @@ public class DialogContent extends ParentPage {
 
     // 5
 
-    @FindBy(xpath = "(//*[@class='mat-badge mat-badge-accent mat-badge-above mat-badge-after mat-badge-small'])[2]")
-    public WebElement messageBox;
+    @FindBy(xpath = "//*[@class='mat-mdc-tooltip-trigger mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base']")
+    public WebElement newMessage;
 
-    @FindBy(xpath = "(//*[@type=\"checkbox\"])[3]")
+    @FindBy(xpath = "(//mat-checkbox)[3]")
     public WebElement addReceiver;
+
+    @FindBy (xpath = "//*[@icon='envelope']")
+    public WebElement sendEmail;
+
+    @FindBy (xpath = "//ms-button/button/span[2]")
+    public WebElement addReceivers;
+
+    @FindBy (xpath = "(//*[@class='mdc-button__label'])[17]")
+    public WebElement addClose;
+
+    @FindBy (xpath = "//*[text()='Send also via']")
+    public WebElement sendVia;
+
+    @FindBy (xpath = "//*[@value='EMAIL']")
+    public WebElement eMail;
+
+    @FindBy (xpath = "//*[@placeholder='Subject']")
+    public WebElement subject;
+
+    @FindBy (xpath = "//*[@id='tinymce']")
+    public WebElement space;
+
+    @FindBy (xpath = "//*[text()='Attach Files...']")
+    public WebElement attachFiles;
+
+    @FindBy (xpath = "(//ms-button/button)[4]")
+    public WebElement send;
+
+
+    @FindBy (xpath = "//*[text()='Outbox']")
+    public WebElement outbox;
+
+    // 8
+
+    @FindBy (xpath = "(//*[@class='mat-mdc-menu-item-text'])[2]")
+    public WebElement finance;
+
+    @FindBy (xpath = "//*[text()='My Finance']")
+    public WebElement myFinance;
+
+
+
+
+
 
 
 
