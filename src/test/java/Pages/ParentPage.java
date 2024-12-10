@@ -11,7 +11,7 @@ import org.testng.Assert;
 import java.time.Duration;
 
 public class ParentPage {
-    public WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(5));
+    public WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(10));
     public JavascriptExecutor js=(JavascriptExecutor) GWD.getDriver();
 
     public void mySendKeys(WebElement element, String yazi) {
