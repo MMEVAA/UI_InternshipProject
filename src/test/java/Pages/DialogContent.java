@@ -147,6 +147,11 @@ public class DialogContent extends ParentPage {
     @FindBy (xpath = "//*[@class='stripe-img']")
     public WebElement payments;
 
+    @FindBy (xpath = "//mat-panel-description/div")
+    public WebElement successMessage;
+
+
+
 
 
 
