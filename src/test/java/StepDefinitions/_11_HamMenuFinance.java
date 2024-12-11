@@ -4,9 +4,7 @@ import Pages.DialogContent;
 import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import java.time.Duration;
+import org.openqa.selenium.interactions.Actions;
 
 public class _11_HamMenuFinance {
 
@@ -27,24 +25,21 @@ public class _11_HamMenuFinance {
         dc.myClick(dc.payAmount);
         dc.myClick(dc.pay);
         dc.mySendKeys(dc.amount, "235");
-        dc.myClick(dc.payAmount);
-        dc.myClick(dc.pay);
-        dc.myClick(dc.payButton);
-
+        new Actions(GWD.getDriver()).doubleClick(dc.payButton).perform();
 
     }
 
     @Then("Enter the payment amount and information and complete the payment.")
-    public void enterThePaymentAmountAndInformationAndCompleteThePayment() {
+    public void enterThePaymentAmountAndInformationAndCompleteThePayment() throws InterruptedException {
 
-        // Duration.ofSeconds(2);
+        Thread.sleep(3000);
         GWD.getDriver().switchTo().frame(0);
-        // dc.wait.until(ExpectedConditions.invisibilityOf(dc.cardNumber));
         dc.mySendKeys(dc.cardNumber, "4242424242424242");
         dc.mySendKeys(dc.expDate, "0127");
         dc.mySendKeys(dc.securityCode, "333");
         GWD.getDriver().switchTo().parentFrame();
         dc.myClick(dc.payments);
+        dc.LoginContainsText(dc.successMessage, "Student Payment successfully created");
 
 
     }

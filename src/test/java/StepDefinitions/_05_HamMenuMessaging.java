@@ -57,6 +57,5 @@ public class _05_HamMenuMessaging {
         dc.HoverOver(dc.messaging);
         dc.myClick(dc.outbox);
 
-
     }
 }

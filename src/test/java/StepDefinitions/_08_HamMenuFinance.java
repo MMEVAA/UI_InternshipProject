@@ -11,7 +11,7 @@ import org.testng.Assert;
 
 public class _08_HamMenuFinance {
 
-    DialogContent dc=new DialogContent();
+    DialogContent dc = new DialogContent();
 
     @Given("Click on the hamburger menu")
     public void clickOnTheHamburgerMenu() {
@@ -32,17 +32,16 @@ public class _08_HamMenuFinance {
 
         dc.myClick(dc.myFinance);
 
-
     }
 
     @And("View payment page")
     public void viewPaymentPage() {
 
         dc.wait.until(ExpectedConditions.urlContains("https://test.mersys.io/student-finance/active"));
-        String strUrl="https://test.mersys.io/student-finance/active";
-        String url= GWD.getDriver().getCurrentUrl();
-        Assert.assertEquals(url,strUrl);
+        String strUrl = "https://test.mersys.io/student-finance/active";
+        String url = GWD.getDriver().getCurrentUrl();
+        Assert.assertEquals(url, strUrl);
 
-//        dc.LoginContainsText(dc.);
+
     }
 }
