@@ -69,7 +69,7 @@ public class DialogContent extends ParentPage {
     @FindBy(xpath = "//div[@class='mat-mdc-tab-labels']/div[2]/span[2]/span")
     public WebElement feeBalanceDetail;
 
-    @FindBy(xpath = "//input[@value='STRIPE']")
+    @FindBy(xpath = "//*[@class='mdc-radio']")
     public WebElement stripe;
 
 
@@ -120,6 +120,49 @@ public class DialogContent extends ParentPage {
 
     @FindBy (xpath = "//*[text()='My Finance']")
     public WebElement myFinance;
+
+    // 11
+
+    @FindBy (xpath = "(//*[@class='mdc-radio'])[2]")
+    public WebElement payAmount;
+
+    @FindBy (xpath = "(//*[@class='mdc-radio'])[4]")
+    public WebElement pay;
+
+    @FindBy (xpath = "//*[@placeholder='Amount']")
+    public WebElement amount;
+
+    @FindBy (xpath = "(//*[@class='mdc-button__label'])[14]")     //*[@data-icon='wallet']
+    public WebElement payButton;
+
+    @FindBy (xpath = "//*[@placeholder='1234 1234 1234 1234']")    //*[@id='Field-numberInput']
+    public WebElement cardNumber;
+
+    @FindBy (xpath = "//*[@id='Field-expiryInput']")
+    public WebElement expDate;
+
+    @FindBy (xpath = "//*[@id='Field-cvcInput']")
+    public WebElement securityCode;
+
+    @FindBy (xpath = "//*[@class='stripe-img']")
+    public WebElement payments;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
