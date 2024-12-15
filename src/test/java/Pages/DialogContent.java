@@ -73,7 +73,6 @@ public class DialogContent extends ParentPage {
     public WebElement stripe;
 
 
-
     // 5
 
     @FindBy(xpath = "//*[@class='mat-mdc-tooltip-trigger mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base']")
@@ -82,98 +81,88 @@ public class DialogContent extends ParentPage {
     @FindBy(xpath = "(//mat-checkbox)[3]")
     public WebElement addReceiver;
 
-    @FindBy (xpath = "//*[@icon='envelope']")
+    @FindBy(xpath = "//*[@icon='envelope']")
     public WebElement sendEmail;
 
-    @FindBy (xpath = "//ms-button/button/span[2]")
+    @FindBy(xpath = "//ms-button/button/span[2]")
     public WebElement addReceivers;
 
-    @FindBy (xpath = "(//*[@class='mdc-button__label'])[17]")
+    @FindBy(xpath = "(//*[@class='mdc-button__label'])[17]")
     public WebElement addClose;
 
-    @FindBy (xpath = "//*[text()='Send also via']")
+    @FindBy(xpath = "//*[text()='Send also via']")
     public WebElement sendVia;
 
-    @FindBy (xpath = "//*[@value='EMAIL']")
+    @FindBy(xpath = "//*[@value='EMAIL']")
     public WebElement eMail;
 
-    @FindBy (xpath = "//*[@placeholder='Subject']")
+    @FindBy(xpath = "//*[@placeholder='Subject']")
     public WebElement subject;
 
-    @FindBy (xpath = "//*[@id='tinymce']")
+    @FindBy(xpath = "//*[@id='tinymce']")
     public WebElement space;
 
-    @FindBy (xpath = "//*[text()='Attach Files...']")
+    @FindBy(xpath = "//*[text()='Attach Files...']")
     public WebElement attachFiles;
 
-    @FindBy (xpath = "(//ms-button/button)[4]")
+    @FindBy(xpath = "(//ms-button/button)[4]")
     public WebElement send;
 
 
-    @FindBy (xpath = "//*[text()='Outbox']")
+    @FindBy(xpath = "//*[text()='Outbox']")
     public WebElement outbox;
 
     // 8
 
-    @FindBy (xpath = "(//*[@class='mat-mdc-menu-item-text'])[2]")
+    @FindBy(xpath = "(//*[@class='mat-mdc-menu-item-text'])[2]")
     public WebElement finance;
 
-    @FindBy (xpath = "//*[text()='My Finance']")
+    @FindBy(xpath = "//*[text()='My Finance']")
     public WebElement myFinance;
 
     // 11
 
-    @FindBy (xpath = "(//*[@class='mdc-radio'])[2]")
+    @FindBy(xpath = "(//*[@class='mdc-radio'])[2]")
     public WebElement payAmount;
 
-    @FindBy (xpath = "(//*[@class='mdc-radio'])[4]")
+    @FindBy(xpath = "(//*[@class='mdc-radio'])[4]")
     public WebElement pay;
 
-    @FindBy (xpath = "//*[@placeholder='Amount']")
+    @FindBy(xpath = "//*[@placeholder='Amount']")
     public WebElement amount;
 
-    @FindBy (xpath = "(//*[@class='mdc-button__label'])[14]")     //*[@data-icon='wallet']
+    @FindBy(xpath = "(//*[@class='mdc-button__label'])[14]")     //*[@data-icon='wallet']
     public WebElement payButton;
 
-    @FindBy (xpath = "//*[@placeholder='1234 1234 1234 1234']")    //*[@id='Field-numberInput']
+    @FindBy(xpath = "//*[@placeholder='1234 1234 1234 1234']")    //*[@id='Field-numberInput']
     public WebElement cardNumber;
 
-    @FindBy (xpath = "//*[@id='Field-expiryInput']")
+    @FindBy(xpath = "//*[@id='Field-expiryInput']")
     public WebElement expDate;
 
-    @FindBy (xpath = "//*[@id='Field-cvcInput']")
+    @FindBy(xpath = "//*[@id='Field-cvcInput']")
     public WebElement securityCode;
 
-    @FindBy (xpath = "//*[@class='stripe-img']")
+    @FindBy(xpath = "//*[@class='stripe-img']")
     public WebElement payments;
 
-    @FindBy (xpath = "//mat-panel-description/div")
+    @FindBy(xpath = "//mat-panel-description/div")
     public WebElement successMessage;
 
+    // 4
+    @FindBy(xpath = "//*[@id=\"mat-menu-panel-5\"]/div/button[1]/span/span")
+    public WebElement sendMessage;
 
+    @FindBy(xpath = "//span[contains(text(), 'Inbox')]")
+    public WebElement inbox;
 
+    @FindBy(xpath = "//span[contains(text(), 'Outbox')]")
+    public WebElement outboxSection;
 
+    @FindBy(xpath = "//span[contains(text(), 'Messaging')]")
+    public WebElement messagingSection;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//mat-toolbar/div/div[1]/div/div[2]/div/span[1]/span/button")
+    public WebElement hamburgerMenu;
 
 }
