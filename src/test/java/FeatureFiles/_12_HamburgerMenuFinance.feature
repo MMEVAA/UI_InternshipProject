@@ -11,7 +11,7 @@ Feature:Payment Options
 
 
   Scenario:
-    Given 3 noktalı menüye tıkla
-    When Ödeme raporunu indir
-    Then İndirilen raporu doğrula
+    Given Click on the report menu
+    When Download payment report
+
 
