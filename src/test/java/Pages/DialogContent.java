@@ -150,30 +150,32 @@ public class DialogContent extends ParentPage {
     @FindBy (xpath = "//mat-panel-description/div")
     public WebElement successMessage;
 
+    // 4
+    @FindBy(xpath = "//*[@id=\"mat-menu-panel-5\"]/div/button[1]/span/span")
+    public WebElement sendMessage;
 
+    @FindBy(xpath = "//span[contains(text(), 'Inbox')]")
+    public WebElement inbox;
 
+    @FindBy(xpath = "//span[contains(text(), 'Outbox')]")
+    public WebElement outboxSection;
 
+    @FindBy(xpath = "//span[contains(text(), 'Messaging')]")
+    public WebElement messagingSection;
 
+    @FindBy(xpath = "//mat-toolbar/div/div[1]/div/div[2]/div/span[1]/span/button")
+    public WebElement hamburgerMenu;
 
+    // 6
+    @FindBy(css = "button[type='submit'] :nth-child(2)")
+    public WebElement moveToTrashIcon;
 
+    @FindBy(xpath = "//span[contains(text(), 'Yes')]")
+    public WebElement confirmYesButton;
 
+    @FindBy(xpath = "//span[contains(text(), 'Message successfully moved to trash!')]")
+    public WebElement successMessaging;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "//input[@id='mat-mdc-checkbox-147-input']")
+    public WebElement selectedSubject;
 }
