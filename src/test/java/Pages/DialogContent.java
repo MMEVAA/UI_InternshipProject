@@ -14,10 +14,10 @@ public class DialogContent extends ParentPage {
 
     // 1
 
-    @FindBy(xpath = "//*[@placeholder='Kullanıcı Adı']")
+    @FindBy(id = "mat-input-0")
     public WebElement username;
 
-    @FindBy(xpath = "//*[@placeholder='Parola']")
+    @FindBy(id = "mat-input-1")
     public WebElement password;
 
     @FindBy(xpath = "//span[@class='mdc-button__label']")
@@ -165,4 +165,16 @@ public class DialogContent extends ParentPage {
     @FindBy(xpath = "//mat-toolbar/div/div[1]/div/div[2]/div/span[1]/span/button")
     public WebElement hamburgerMenu;
 
+    // 6
+    @FindBy(css = "button[type='submit'] :nth-child(2)")
+    public WebElement moveToTrashIcon;
+
+    @FindBy(xpath = "//span[contains(text(), 'Yes')]")
+    public WebElement confirmYesButton;
+
+    @FindBy(xpath = "//span[contains(text(), 'Message successfully moved to trash!')]")
+    public WebElement successMessaging;
+
+    @FindBy(xpath = "//input[@id='mat-mdc-checkbox-147-input']")
+    public WebElement selectedSubject;
 }
