@@ -150,6 +150,44 @@ public class DialogContent extends ParentPage {
     @FindBy (xpath = "//mat-panel-description/div")
     public WebElement successMessage;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // 4
     @FindBy(xpath = "//*[@id=\"mat-menu-panel-5\"]/div/button[1]/span/span")
     public WebElement sendMessage;
