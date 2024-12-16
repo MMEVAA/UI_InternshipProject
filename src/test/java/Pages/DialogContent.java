@@ -151,6 +151,21 @@ public class DialogContent extends ParentPage {
     public WebElement successMessage;
 
 
+    // 13
+    @FindBy (xpath = "(//*[text()='Attendance'])[1]")
+    public WebElement attendance;
+
+    @FindBy (xpath = "(//*[@class='mat-ripple mat-mdc-tab-ripple'])[3]")
+    public WebElement attendanceExcuses;
+
+    @FindBy (xpath = "(//*[@class='mat-focus-indicator'])[18]")
+    public WebElement addAttendanceExcuses;
+
+    @FindBy (xpath = "//*[@placeholder='Message']")
+    public WebElement messageBox;
+
+    @FindBy (xpath = "//*[text()='Send']")
+    public WebElement sendBox;
 
 
 
