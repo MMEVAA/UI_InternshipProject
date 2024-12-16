@@ -160,6 +160,21 @@ public class DialogContent extends ParentPage {
     @FindBy(xpath = "(//*[@class='mat-mdc-menu-item-text'])[2]")
     public WebElement pdfReport;
 
+    // 13
+    @FindBy (xpath = "(//*[text()='Attendance'])[1]")
+    public WebElement attendance;
+
+    @FindBy (xpath = "(//*[@class='mat-ripple mat-mdc-tab-ripple'])[3]")
+    public WebElement attendanceExcuses;
+
+    @FindBy (xpath = "(//*[@class='mat-focus-indicator'])[18]")
+    public WebElement addAttendanceExcuses;
+
+    @FindBy (xpath = "//*[@placeholder='Message']")
+    public WebElement messageBox;
+
+    @FindBy (xpath = "//*[text()='Send']")
+    public WebElement sendBox;
 
     // 4
     @FindBy(xpath = "//*[@id=\"mat-menu-panel-5\"]/div/button[1]/span/span")
